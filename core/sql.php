@@ -8,7 +8,7 @@ function insert (string $entidade, array $dados) : string
     $valores = implode(', ', array_values($dados));
 
     $instrucao .= " ({$campos})";
-    $instrucao .= " VALLUES ({$valores})";
+    $instrucao .= " VALUES ({$valores})";
 
     return $instrucao;
 }
