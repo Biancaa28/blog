@@ -1,3 +1,4 @@
+
 <?php
 
 function insere (string $entidade, array $dados) : bool
@@ -163,7 +164,7 @@ string $ordem = null) : array
     }
 
     $instrucao = select($entidade, $campos, $coringa_criterio, $ordem);
-
+    
     $conexao = conecta();
 
     $stmt = mysqli_prepare($conexao, $instrucao);
